@@ -1,0 +1,1145 @@
+# GDGOC NFSU CYBERSECURITY POSTER STUDIO
+# COMPLETE MASTER UPGRADE — PROFESSIONAL DESIGN PLATFORM
+
+Upgrade my existing GDG on Campus NFSU Cybersecurity Poster Studio into a professional, advanced poster-design application.
+
+This is an upgrade to an existing project, NOT a request to create a new application.
+
+IMPORTANT:
+- Inspect the complete existing source code before making changes.
+- Understand the existing architecture, components, state management, image handling, templates and export system.
+- Preserve all existing working functionality.
+- Do not unnecessarily replace working components.
+- Do not remove existing navigation, campus campaigns, project gallery, branding, quality assistant or production export features.
+- Fix existing bugs before adding new functionality.
+- Do not create fake buttons, simulated functionality or placeholder features presented as complete.
+- Implement actual working features and test them.
+
+The final application should feel like a professional graphic-design platform, not a basic AI form that generates posters.
+
+==================================================
+PART 1 — PROFESSIONAL APPLICATION INTERFACE
+==================================================
+
+Improve the overall interface and user experience.
+
+Create a polished, modern, responsive design workspace.
+
+Design direction:
+- Professional creative studio.
+- Dark navy and graphite interface.
+- Electric cyan and blue accents.
+- Subtle gradients and glass effects.
+- Clean typography.
+- Proper spacing and visual hierarchy.
+- Smooth but lightweight transitions.
+- Professional icons.
+- Responsive desktop, tablet and mobile layouts.
+
+Maintain a clear application structure:
+
+MAIN NAVIGATION:
+1. Dashboard
+2. Create Poster
+3. Template Library
+4. Image Library
+5. Background Studio
+6. Brand Kit
+7. Campus Campaigns
+8. Project Gallery
+9. Quality Assistant
+10. Export Studio
+11. Settings
+
+The poster editor should have a central canvas, editing controls and a clear preview.
+
+Do not overcrowd the interface.
+
+==================================================
+PART 2 — FIX THE EXISTING BROKEN IMAGE PROBLEM
+==================================================
+
+The current poster preview sometimes displays a broken image icon and alternative text instead of the actual image.
+
+Fix the root cause before expanding the image library.
+
+Investigate:
+- Invalid or expired URLs.
+- Incorrect image paths.
+- External image-host restrictions.
+- CORS issues where relevant.
+- Failed network requests.
+- Incorrect image component properties.
+- Incorrect asynchronous loading.
+- Image state not updating after template changes.
+- Broken references after project reopening.
+- Image export failures.
+
+Implement:
+- Image loading indicators.
+- Proper loading and error states.
+- Validated image references.
+- Retry functionality where appropriate.
+- Reliable fallback images.
+- Correct image cropping.
+- Correct aspect ratios.
+- Image caching where appropriate.
+- Clear error messages.
+- Image preloading before export.
+
+Never display broken-image icons in the final exported poster.
+
+Never silently replace a failed image with an unrelated image.
+
+The editor preview and exported poster must display the same selected image.
+
+==================================================
+PART 3 — IMAGE LIBRARY: 100+ REAL IMAGES
+==================================================
+
+Build a professional image library containing at least 100 different, working, individually selectable image assets.
+
+Create these categories:
+
+1. Cybersecurity and Digital Security — 15 images
+2. Ethical Hacking and Penetration Testing — 10 images
+3. Programming and Terminal Screens — 10 images
+4. Computer Hardware and Circuit Boards — 10 images
+5. Digital Forensics and Investigation — 10 images
+6. Artificial Intelligence and Machine Learning — 10 images
+7. Abstract Technology Backgrounds — 15 images
+8. Network Security and Servers — 10 images
+9. Technology Conferences and Workshops — 5 images
+10. Futuristic Geometric Visuals — 5 images
+
+TOTAL: 100 images.
+
+IMAGE LIBRARY FEATURES:
+
+- Real image thumbnails.
+- Image name and category.
+- Search bar.
+- Category filters.
+- Orientation filters.
+- Colour filters.
+- Source and licence information.
+- Favourite images.
+- Recently used images.
+- Preview before insertion.
+- Upload custom images.
+- Pagination or load-more.
+- Lazy loading for performance.
+- Replace selected image.
+- Save reusable image assets.
+
+Support:
+- Portrait.
+- Landscape.
+- Square.
+- Transparent PNG.
+- High-resolution photographs.
+- Abstract graphics.
+
+Do not create 100 duplicate images with different filenames.
+
+Do not use random image URL generators.
+
+Do not invent image URLs.
+
+Every asset must be tested and actually load.
+
+==================================================
+PART 4 — IMAGE SOURCES AND LICENSING
+==================================================
+
+Use reliable image sources and permitted integration methods.
+
+UNSPLASH:
+https://unsplash.com/
+https://unsplash.com/documentation
+https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines
+
+PEXELS:
+https://www.pexels.com/
+https://www.pexels.com/api/
+https://www.pexels.com/api/documentation/
+
+PIXABAY:
+https://pixabay.com/
+
+WIKIMEDIA COMMONS:
+https://commons.wikimedia.org/
+
+Implementation requirements:
+
+- Prefer official APIs when available.
+- Use actual image URLs returned by the APIs.
+- Keep secret API keys server-side.
+- Never expose API secrets in frontend code.
+- Respect image licences and provider policies.
+- Include attribution where required.
+- Follow image-provider hotlinking rules.
+- Do not assume external image URLs are permanent.
+- Validate image loading before allowing insertion.
+
+For Unsplash, follow its API requirements, including hotlinked API image URLs and required photographer attribution.
+
+For Pexels and Pixabay, follow their current API and licensing requirements.
+
+If API keys are unavailable:
+- Do not pretend API integration is complete.
+- Provide a bundled local image library of properly licensed assets.
+- Include source and licence information for each asset.
+- Keep the image library usable without API access.
+
+The application must not depend entirely on external image APIs to function.
+
+==================================================
+PART 5 — IMAGE ROLES: HERO, BACKGROUND AND DECORATIVE
+==================================================
+
+This is a critical requirement.
+
+The application must distinguish between three independent image roles.
+
+A. HERO IMAGE
+
+Hero images are main foreground visual subjects.
+
+Examples:
+- Hacker workstation.
+- Cybersecurity expert.
+- Server racks.
+- Computer systems.
+- Digital forensic investigation.
+- 3D cybersecurity illustrations.
+- CTF competition visuals.
+- Speaker photographs.
+
+Hero image behaviour:
+- Insert as an independent foreground object.
+- Never automatically become the background.
+- Drag and drop.
+- Resize.
+- Crop.
+- Rotate.
+- Zoom.
+- Reposition.
+- Opacity.
+- Border.
+- Shadow.
+- Rounded corners.
+- Remove.
+- Replace while preserving position and dimensions.
+
+B. BACKGROUND IMAGE
+
+Background images belong exclusively to the background layer.
+
+Examples:
+- Abstract technology backgrounds.
+- Circuit textures.
+- Network patterns.
+- Futuristic gradients.
+- Dark digital textures.
+
+Background image behaviour:
+- Remain behind all poster content.
+- Cover the poster when Cover mode is selected.
+- Support Cover, Contain, Stretch and Custom positioning.
+- Support blur, brightness, contrast and opacity.
+- Replacing the background must not affect hero images.
+
+C. DECORATIVE IMAGES
+
+Examples:
+- Shields.
+- Locks.
+- Circuit illustrations.
+- Cybersecurity icons.
+- Abstract geometric graphics.
+- Digital symbols.
+- 3D elements.
+
+Decorative image behaviour:
+- Independent foreground elements.
+- Resize.
+- Rotate.
+- Move.
+- Reorder.
+- Change opacity.
+- Remove independently.
+
+IMAGE LIBRARY ACTIONS:
+
+Whenever a user selects an image, provide three explicit actions:
+
+1. Use as Hero Image.
+2. Use as Background.
+3. Add as Decoration.
+
+Never automatically assign an image role based only on its filename or category.
+
+Never use one generic image-selection function that assigns every image to the background.
+
+==================================================
+PART 6 — DEDICATED BACKGROUND STUDIO
+==================================================
+
+Create a completely separate Background Studio.
+
+This section is ONLY for background design.
+
+It must not contain hero-image or foreground-image management.
+
+A. BACKGROUND MODES
+
+Provide:
+
+1. No Background.
+2. Transparent Background.
+3. Solid Colour.
+4. Gradient.
+5. Pattern.
+6. Background Image.
+7. Custom Background Preset.
+
+NO BACKGROUND:
+
+When selected:
+- Remove background colour.
+- Remove gradient.
+- Remove background image.
+- Remove background patterns.
+- Remove background effects.
+- Preserve all foreground elements.
+- Preserve hero images.
+- Preserve text.
+- Preserve logos.
+- Preserve decorative elements.
+
+TRANSPARENT BACKGROUND:
+
+- Display checkerboard preview.
+- Preserve genuine alpha transparency.
+- Export a PNG with an actual alpha channel.
+- Do not simulate transparency using a checkerboard image.
+
+JPEG cannot preserve transparency. Ask the user to select a fallback colour or use white by default.
+
+B. COLOUR STUDIO
+
+Provide:
+- Colour picker.
+- HEX input.
+- RGB input.
+- HSL input.
+- Custom colour palettes.
+- Saved colours.
+- Recently used colours.
+- Colour combinations.
+- Reset controls.
+
+Include curated colour combinations:
+
+- Midnight Blue.
+- Electric Cyan.
+- Neon Green.
+- Cyber Purple.
+- Crimson Red.
+- Black and Gold.
+- Arctic Blue.
+- Digital Matrix.
+- Graphite and Orange.
+- Deep Space.
+- Cyberpunk Violet.
+- Ice Blue.
+
+C. GRADIENT STUDIO
+
+Support:
+- Linear gradients.
+- Radial gradients.
+- Conic gradients where supported.
+- Two-colour gradients.
+- Three-colour gradients.
+- Multiple colour stops.
+- Custom colour stops.
+- Gradient angle.
+- Direction.
+- Position.
+- Opacity.
+- Intensity.
+
+Allow users to save and reuse custom gradients.
+
+D. BACKGROUND ADJUSTMENTS
+
+Provide:
+- Brightness.
+- Contrast.
+- Saturation.
+- Hue.
+- Blur.
+- Opacity.
+- Vignette.
+- Noise intensity.
+- Texture intensity.
+- Overlay colour.
+- Overlay opacity.
+
+All adjustments must affect only the background.
+
+E. BACKGROUND EFFECTS
+
+Provide optional background-only effects:
+
+- Fine grid.
+- Digital matrix.
+- Circuit pattern.
+- Network diagrams.
+- Subtle particles.
+- Geometric lines.
+- Noise texture.
+- Soft glow.
+- Radial light.
+- Vignette.
+- Abstract gradient mesh.
+
+Each effect must have independent enable/disable and adjustment controls.
+
+F. BACKGROUND PRESETS
+
+Create at least 30 distinct background presets.
+
+Examples:
+- Midnight Cyber.
+- Neon Matrix.
+- Electric Blue.
+- Digital Forensics.
+- Deep Space.
+- Holographic.
+- Circuit Board.
+- Dark Terminal.
+- Cyberpunk Violet.
+- Arctic Security.
+- Minimal White.
+- Corporate Navy.
+- Graphite.
+- Crimson Alert.
+- Quantum Grid.
+- Abstract Mesh.
+- Glitch Background.
+- Monochrome Editorial.
+- Premium Black.
+- Gold Technology.
+- Network Defense.
+- AI Intelligence.
+- Digital Rain.
+- Blue Team.
+- Red Team.
+- Future Interface.
+- Gradient Glass.
+- Isometric Grid.
+- Minimal Geometry.
+- Dark Aurora.
+
+Selecting a preset must change only the background layer.
+
+==================================================
+PART 7 — 30+ COMPLETE VISUAL THEMES
+==================================================
+
+Create at least 30 genuinely different overall poster themes.
+
+Organize them into:
+
+CYBERSECURITY:
+1. Cyberpunk Neon.
+2. Dark Terminal.
+3. Matrix Green.
+4. Digital Forensics.
+5. Red Team.
+6. Blue Team.
+7. Zero Trust.
+8. Network Defense.
+
+TECHNOLOGY:
+9. Futuristic Blue.
+10. AI Intelligence.
+11. Quantum Technology.
+12. Digital Grid.
+13. Holographic Interface.
+14. Abstract Geometry.
+
+PROFESSIONAL:
+15. Swiss Editorial.
+16. Minimal Corporate.
+17. Modern Conference.
+18. Bold Typography.
+19. Premium Black and Gold.
+20. Clean Academic.
+
+CREATIVE:
+21. Retro Computing.
+22. Glitch Art.
+23. Brutalist Poster.
+24. Gradient Glass.
+25. Isometric Technology.
+26. Experimental Typography.
+
+EVENT:
+27. Hackathon Energy.
+28. CTF Competition.
+29. Technical Workshop.
+30. Speaker Spotlight.
+31. Recruitment Campaign.
+32. Community Celebration.
+
+Each theme must have:
+- Unique layout.
+- Colour palette.
+- Typography pairing.
+- Image treatment.
+- Decorative elements.
+- Visual hierarchy.
+- Preview thumbnail.
+
+Changing a theme must produce an actual visual change, not merely recolour the background.
+
+Keep theme settings separate from user content so that applying a theme does not delete event details or user images.
+
+==================================================
+PART 8 — ADVANCED TYPOGRAPHY STUDIO
+==================================================
+
+Create a dedicated Typography Studio.
+
+Every text element must be independently editable.
+
+A. FONT LIBRARY
+
+Use Google Fonts:
+https://fonts.google.com/
+
+Include suitable fonts:
+
+- Inter.
+- Roboto.
+- Montserrat.
+- Poppins.
+- Space Grotesk.
+- Orbitron.
+- Rajdhani.
+- Exo 2.
+- IBM Plex Mono.
+- JetBrains Mono.
+- Bebas Neue.
+- Oswald.
+- Sora.
+- Archivo.
+- Barlow Condensed.
+- DM Sans.
+- Playfair Display.
+- Manrope.
+
+Organize fonts by:
+- Sans-serif.
+- Serif.
+- Display.
+- Monospace.
+- Condensed.
+- Rounded.
+- Handwriting.
+- Experimental.
+
+Provide searchable font selection and real font previews.
+
+Load fonts correctly. Do not claim a font is available before it loads successfully.
+
+B. INDEPENDENT TEXT ELEMENTS
+
+Support separate editing for:
+
+- Main heading.
+- Event title.
+- Subtitle.
+- Description.
+- Date and time.
+- Venue.
+- Speaker name.
+- Speaker designation.
+- Registration details.
+- Technical labels.
+- Campus information.
+- Footer.
+- Additional custom text.
+
+Changing one text element's font must not affect unrelated text elements.
+
+C. FONT CUSTOMIZATION
+
+Provide:
+
+- Font family.
+- Font size.
+- Font weight.
+- Bold.
+- Italic.
+- Underline.
+- Alignment.
+- Letter spacing.
+- Word spacing.
+- Line height.
+- Text transformation.
+- Text colour.
+- Text opacity.
+- Text outline.
+- Text shadow.
+- Text background.
+- Text rotation.
+
+Include sliders and precise numeric input controls.
+
+D. FONT PAIRING PRESETS
+
+Create:
+- Cyberpunk Bold.
+- Technical Minimal.
+- Editorial Professional.
+- Futuristic Display.
+- Hacker Terminal.
+- Academic Conference.
+- Premium Corporate.
+- Brutalist Typography.
+
+Applying a typography preset must affect typography only.
+
+E. TEXT POSITIONING
+
+Allow:
+- Drag and drop.
+- Resize text boxes.
+- Change width and height.
+- Rotate.
+- Align left, centre and right.
+- Duplicate.
+- Delete.
+- Lock and unlock.
+- Layer ordering.
+- Grid snapping.
+- Alignment guides.
+
+Prevent accidental text overflow.
+
+F. CUSTOM FONT UPLOAD
+
+Where technically supported, allow:
+- WOFF.
+- WOFF2.
+- TTF.
+- OTF.
+
+Validate uploaded font files and respect their licences.
+
+G. HINDI AND ENGLISH SUPPORT
+
+Support English and Hindi.
+
+Ensure correct Devanagari font rendering.
+
+Allow different fonts for English and Hindi in the same poster.
+
+Prevent missing-glyph boxes and broken characters.
+
+H. TYPOGRAPHY EXPORT
+
+Wait for all fonts to load before export.
+
+Preserve:
+- Font family.
+- Font weight.
+- Size.
+- Letter spacing.
+- Line height.
+- Alignment.
+- Position.
+- Effects.
+
+If a selected font cannot be rendered correctly during export, show a warning.
+
+==================================================
+PART 9 — ELEMENTS AND GRAPHICS STUDIO
+==================================================
+
+Create a dedicated library for independent visual elements.
+
+Include:
+- Cybersecurity icons.
+- Shields.
+- Locks.
+- Network symbols.
+- Circuit illustrations.
+- Geometric shapes.
+- Decorative lines.
+- Stickers.
+- Badges.
+- Abstract foreground graphics.
+- 3D-style elements.
+- Arrows and callouts.
+
+Allow users to:
+- Insert.
+- Resize.
+- Rotate.
+- Recolour where supported.
+- Change opacity.
+- Reposition.
+- Duplicate.
+- Delete.
+- Reorder.
+
+These elements must never automatically become background images.
+
+==================================================
+PART 10 — ADVANCED IMAGE EDITING
+==================================================
+
+Create professional image-editing controls.
+
+Support:
+- Drag and drop.
+- Crop.
+- Resize.
+- Rotate.
+- Zoom.
+- Position.
+- Opacity.
+- Brightness.
+- Contrast.
+- Saturation.
+- Hue.
+- Blur.
+- Border.
+- Shadow.
+- Rounded corners.
+- Image masking where supported.
+- Layer ordering.
+- Replace image while preserving dimensions and position.
+
+Ensure image adjustments apply only to the selected image.
+
+Do not apply background adjustments to hero images.
+
+==================================================
+PART 11 — BRANDING AND LOGO STUDIO
+==================================================
+
+Create a dedicated brand kit.
+
+Allow:
+- Uploading logos.
+- Saving reusable logos.
+- Selecting brand colours.
+- Selecting heading and body fonts.
+- Saving brand presets.
+- Managing social media handles.
+- Managing campus identity.
+- Reusing assets across projects.
+
+Support separate uploaded assets for:
+- GDG branding.
+- NFSU branding.
+- Campus identity.
+- Event-specific logos.
+
+Never fabricate official Google, GDG or NFSU logos.
+
+Use uploaded official assets or clearly marked placeholders.
+
+Do not claim an event or campus is officially verified unless its information has actually been checked.
+
+==================================================
+PART 12 — MULTI-CAMPUS CAMPAIGN STUDIO
+==================================================
+
+Preserve and improve the existing campus campaign functionality.
+
+Allow users to:
+- Select multiple verified cybersecurity-related NFSU campuses.
+- Create one master poster.
+- Generate campus-specific versions.
+- Change campus name and details.
+- Review each version.
+- Edit each version independently.
+- Export individually or as a batch.
+
+Keep campus information in an editable configuration.
+
+Official reference sources:
+
+https://www.nfsu.ac.in/about_campuses
+https://www.nfsu.ac.in/CSAS
+
+Include only campuses whose relevant cybersecurity-related academic programme is verified using official information.
+
+Do not assume that an academic programme proves a GDG chapter exists.
+
+Never invent:
+- Campus chapters.
+- Event dates.
+- Speaker details.
+- Contact numbers.
+- Registration links.
+- Social media handles.
+
+Allow custom campus entries to be marked Unverified.
+
+==================================================
+PART 13 — PROFESSIONAL POSTER TEMPLATE LIBRARY
+==================================================
+
+Preserve existing templates and improve their design quality.
+
+Provide multiple different layouts for:
+
+1. Capture The Flag competitions.
+2. Ethical hacking workshops.
+3. Cybersecurity seminars.
+4. Guest speaker events.
+5. Hackathons.
+6. Security awareness campaigns.
+7. Training bootcamps.
+8. Student recruitment.
+9. Multi-campus events.
+10. Technical announcements.
+11. Community achievements.
+12. Event countdowns.
+
+Every template must support independent background, hero image, decorative elements and typography.
+
+Provide:
+- Search.
+- Category filters.
+- Preview.
+- Favourite templates.
+- Duplicate template.
+- Apply template.
+
+Do not reuse one layout with only different colours and call them different templates.
+
+==================================================
+PART 14 — IMAGE SEARCH EXPERIENCE
+==================================================
+
+Add a functional image search experience.
+
+Users should be able to search:
+
+- Cybersecurity.
+- Ethical hacking.
+- Hacker workstation.
+- Programming.
+- Computer networks.
+- Digital forensics.
+- Artificial intelligence.
+- Servers.
+- Circuit boards.
+- Technology backgrounds.
+- Conference photography.
+
+Provide filters for:
+- Category.
+- Orientation.
+- Dominant colour.
+- Image source.
+- Licence information.
+
+Display real matching images from the connected sources.
+
+Provide explicit insertion options:
+- Use as Hero Image.
+- Use as Background.
+- Add as Decoration.
+
+==================================================
+PART 15 — LAYER MANAGEMENT
+==================================================
+
+Implement proper independent layer management.
+
+Suggested structure:
+
+BACKGROUND LAYER:
+- Background colour.
+- Gradient.
+- Pattern.
+- Background image.
+- Background effects.
+
+FOREGROUND LAYERS:
+- Hero images.
+- Decorative images.
+- Shapes.
+- Text.
+- Logos.
+- Badges.
+- Additional elements.
+
+Provide:
+- Reorder.
+- Visibility toggle.
+- Lock/unlock.
+- Rename.
+- Duplicate.
+- Delete.
+- Select.
+- Group and ungroup where supported.
+
+Changing one layer must not unintentionally modify another.
+
+The rendering order must be consistent in preview and export.
+
+==================================================
+PART 16 — PROJECT MANAGEMENT
+==================================================
+
+Improve the existing Project Gallery.
+
+Support:
+- Create new project.
+- Save.
+- Rename.
+- Duplicate.
+- Reopen.
+- Delete with confirmation.
+- Project thumbnails.
+- Recently edited projects.
+- Search projects.
+- Export history.
+
+Persist all relevant editing properties:
+
+- Background configuration.
+- Hero image references.
+- Decorative elements.
+- Typography.
+- Logos.
+- Layer order.
+- Element positions.
+- Template selection.
+- Theme selection.
+- Canvas dimensions.
+
+When reopening a project, restore the exact editing state.
+
+Do not claim cloud saving unless an actual backend or cloud-storage integration is configured.
+
+If local browser storage is used, explain its limitations.
+
+==================================================
+PART 17 — QUALITY ASSISTANT
+==================================================
+
+Preserve and improve the existing Quality Assistant.
+
+Before export, check:
+
+- Broken image URLs.
+- Missing images.
+- Failed image loading.
+- Low-resolution assets.
+- Text overflow.
+- Poor text contrast.
+- Missing event information.
+- Inconsistent typography.
+- Image and text overlap.
+- Incorrect image cropping.
+- Missing required logos.
+- Text outside safe margins.
+- Font-loading failures.
+- Unsupported export properties.
+
+Provide clear warnings and actionable corrections.
+
+Do not silently invent missing event information.
+
+==================================================
+PART 18 — EXPORT STUDIO
+==================================================
+
+Create a reliable export system.
+
+Supported formats:
+- PNG.
+- JPEG.
+- SVG where the design can be represented correctly.
+
+Supported dimensions:
+
+- Instagram Portrait: 1080 × 1350.
+- Instagram Square: 1080 × 1080.
+- Instagram Story: 1080 × 1920.
+- WhatsApp Poster: 1080 × 1350.
+- A4 Print.
+
+Allow custom dimensions.
+
+EXPORT REQUIREMENTS:
+
+- Wait for all images to load.
+- Wait for fonts to load.
+- Render every layer correctly.
+- Preserve image quality.
+- Preserve text sharpness.
+- Preserve transparency in PNG.
+- Ask for a fallback colour for transparent JPEG export.
+- Match editor preview with exported output.
+- Avoid clipped text and missing images.
+- Support high-resolution output.
+
+==================================================
+PART 19 — PERFORMANCE AND RESPONSIVENESS
+==================================================
+
+Optimize the application.
+
+Requirements:
+- Lazy-load image thumbnails.
+- Use efficient image sizes.
+- Avoid loading the entire image library at once.
+- Cache assets where appropriate.
+- Avoid unnecessary component rerenders.
+- Keep canvas interactions responsive.
+- Handle large posters without freezing.
+- Provide loading states.
+- Handle API failures gracefully.
+- Make mobile controls usable.
+
+Do not sacrifice functionality for unnecessary visual effects.
+
+==================================================
+PART 20 — COMPLETE TESTING AND ACCEPTANCE CRITERIA
+==================================================
+
+Do not stop after generating code.
+
+Run actual tests.
+
+IMAGE TESTS:
+1. Load images from every category.
+2. Confirm at least 100 distinct assets work.
+3. Preview images.
+4. Insert a hero image.
+5. Insert a background image.
+6. Insert a decorative image.
+7. Replace an image.
+8. Crop and reposition an image.
+9. Test a failed image URL.
+10. Test fallback behaviour.
+
+BACKGROUND TESTS:
+11. Select No Background.
+12. Select Transparent Background.
+13. Select Solid Colour.
+14. Create a custom gradient.
+15. Change gradient direction and stops.
+16. Apply a background pattern.
+17. Adjust background blur and opacity.
+18. Verify foreground elements remain unchanged.
+
+TYPOGRAPHY TESTS:
+19. Change the main heading font.
+20. Change subtitle font independently.
+21. Change font weight and size.
+22. Change letter spacing and line height.
+23. Move and rotate text.
+24. Apply typography presets.
+25. Enter Hindi text.
+26. Upload a custom font.
+27. Verify font rendering after reopening.
+
+EDITOR TESTS:
+28. Add decorative elements.
+29. Reorder layers.
+30. Hide and show layers.
+31. Apply a new visual theme.
+32. Save and reopen a project.
+33. Generate a multi-campus version.
+
+EXPORT TESTS:
+34. Export PNG.
+35. Export transparent PNG.
+36. Export JPEG.
+37. Export Instagram portrait.
+38. Export Instagram story.
+39. Compare preview with exported output.
+40. Verify that no images or fonts are missing.
+
+Fix all critical errors before declaring the application ready.
+
+==================================================
+PART 21 — FINAL IMPLEMENTATION REPORT
+==================================================
+
+After implementation, provide a factual report containing:
+
+1. Existing bugs fixed.
+2. Number of working image assets.
+3. Image categories implemented.
+4. Image sources integrated.
+5. Whether API integration is real or simulated.
+6. Number of working background presets.
+7. Number of working overall themes.
+8. Typography features implemented.
+9. Hindi font support status.
+10. Hero/background/decorative image separation status.
+11. Transparent PNG export status.
+12. Project persistence status.
+13. Multi-campus functionality status.
+14. Tests passed.
+15. Remaining bugs and limitations.
+
+Clearly distinguish:
+- Fully implemented.
+- Partially implemented.
+- Not implemented.
+- Requires API keys or external configuration.
+
+Never report a feature as completed unless it has been implemented and tested.
+
+==================================================
+FINAL PRODUCT REQUIREMENT
+==================================================
+
+The final result must be a professional, advanced cybersecurity poster-design studio.
+
+It must have:
+
+- 100+ real working image assets.
+- 30+ distinct overall design themes.
+- 30+ background presets.
+- A completely separate Background Studio.
+- Independent Hero Image controls.
+- Decorative Elements Studio.
+- Fully editable Typography Studio.
+- Hindi and English font support.
+- Independent layer management.
+- Professional templates.
+- Brand Kit.
+- Multi-campus campaign support.
+- Reliable project saving.
+- High-quality export.
+- Functional quality checks.
+
+MOST IMPORTANT ARCHITECTURE RULE:
+
+BACKGROUND, HERO IMAGES, DECORATIVE ELEMENTS, TYPOGRAPHY AND BRANDING MUST BE INDEPENDENT SYSTEMS.
+
+They must have separate state, separate controls, separate rendering responsibilities and predictable export behaviour.
+
+Do not solve interface problems only by rearranging buttons. Fix the underlying data models and rendering logic.
+
+Prioritize reliable functionality, professional visual quality and maintainable code over adding unnecessary features.
+
+Upgrade the existing project carefully and preserve all working functionality.

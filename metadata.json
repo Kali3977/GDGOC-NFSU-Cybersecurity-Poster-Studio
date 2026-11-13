@@ -1,0 +1,8 @@
+{
+  "name": "GDG on Campus NFSU Gandhinagar — THE SIGNAL Campaign Studio",
+  "description": "An award-winning editorial campaign poster studio for GDG on Campus NFSU Gandhinagar, featuring THE SIGNAL campaign, Swiss brutalist typography, authentic visual metaphors, and high-resolution 4:5 export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
